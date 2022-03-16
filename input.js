@@ -32,6 +32,19 @@ const handleUserInput = function (key) {
     console.log('right')
     connection.write('Move: right')
   }
+// Fun messages?
+  if (key === '1') {
+    console.log('deth by snek')
+    connection.write('Say: deth by snek')
+  }
+  if (key === '2') {
+    console.log('snek hungry')
+    connection.write('Say: snek hungry')
+  }
+  if (key === '3') {
+    console.log('Say: python rulz')
+    connection.write('Say: python rulz')
+  }
 };
 
 module.exports = {setupInput}
